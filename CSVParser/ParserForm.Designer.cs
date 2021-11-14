@@ -37,8 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.columnNumUpDown = new System.Windows.Forms.NumericUpDown();
-            this.noneRadioButton = new System.Windows.Forms.RadioButton();
+            this.classificationRadioButton = new System.Windows.Forms.RadioButton();
             this.normanizationRadioButton = new System.Windows.Forms.RadioButton();
             this.logButton = new System.Windows.Forms.Button();
             this.emissionsRadioButton = new System.Windows.Forms.RadioButton();
@@ -47,9 +46,7 @@
             this.refactoringProgressBar = new System.Windows.Forms.ProgressBar();
             this.startRefactoringButton = new System.Windows.Forms.Button();
             this.debugConsole = new System.Windows.Forms.TextBox();
-            this.classificationRadioButton = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.columnNumUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // pathTextBox
@@ -137,8 +134,6 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.classificationRadioButton);
-            this.panel1.Controls.Add(this.columnNumUpDown);
-            this.panel1.Controls.Add(this.noneRadioButton);
             this.panel1.Controls.Add(this.normanizationRadioButton);
             this.panel1.Controls.Add(this.logButton);
             this.panel1.Controls.Add(this.emissionsRadioButton);
@@ -149,24 +144,17 @@
             this.panel1.Size = new System.Drawing.Size(510, 48);
             this.panel1.TabIndex = 7;
             // 
-            // columnNumUpDown
+            // classificationRadioButton
             // 
-            this.columnNumUpDown.Location = new System.Drawing.Point(278, 23);
-            this.columnNumUpDown.Name = "columnNumUpDown";
-            this.columnNumUpDown.Size = new System.Drawing.Size(61, 20);
-            this.columnNumUpDown.TabIndex = 14;
-            // 
-            // noneRadioButton
-            // 
-            this.noneRadioButton.AutoSize = true;
-            this.noneRadioButton.Location = new System.Drawing.Point(278, 4);
-            this.noneRadioButton.Name = "noneRadioButton";
-            this.noneRadioButton.Size = new System.Drawing.Size(61, 17);
-            this.noneRadioButton.TabIndex = 13;
-            this.noneRadioButton.TabStop = true;
-            this.noneRadioButton.Text = "\"None\"";
-            this.noneRadioButton.UseVisualStyleBackColor = true;
-            this.noneRadioButton.CheckedChanged += new System.EventHandler(this.noneRadioButton_CheckedChanged);
+            this.classificationRadioButton.AutoSize = true;
+            this.classificationRadioButton.Location = new System.Drawing.Point(265, 3);
+            this.classificationRadioButton.Name = "classificationRadioButton";
+            this.classificationRadioButton.Size = new System.Drawing.Size(106, 17);
+            this.classificationRadioButton.TabIndex = 15;
+            this.classificationRadioButton.TabStop = true;
+            this.classificationRadioButton.Text = "Классификация";
+            this.classificationRadioButton.UseVisualStyleBackColor = true;
+            this.classificationRadioButton.CheckedChanged += new System.EventHandler(this.classificationRadioButton_CheckedChanged);
             // 
             // normanizationRadioButton
             // 
@@ -263,18 +251,6 @@
             this.debugConsole.TabIndex = 10;
             this.debugConsole.Text = "Debug";
             // 
-            // classificationRadioButton
-            // 
-            this.classificationRadioButton.AutoSize = true;
-            this.classificationRadioButton.Location = new System.Drawing.Point(349, 15);
-            this.classificationRadioButton.Name = "classificationRadioButton";
-            this.classificationRadioButton.Size = new System.Drawing.Size(106, 17);
-            this.classificationRadioButton.TabIndex = 15;
-            this.classificationRadioButton.TabStop = true;
-            this.classificationRadioButton.Text = "Классификация";
-            this.classificationRadioButton.UseVisualStyleBackColor = true;
-            this.classificationRadioButton.CheckedChanged += new System.EventHandler(this.classificationRadioButton_CheckedChanged);
-            // 
             // ParserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,7 +272,6 @@
             this.Text = "CSV parser";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.columnNumUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,8 +296,6 @@
         private System.Windows.Forms.TextBox debugConsole;
         private System.Windows.Forms.Button logButton;
         private System.Windows.Forms.RadioButton normanizationRadioButton;
-        private System.Windows.Forms.NumericUpDown columnNumUpDown;
-        private System.Windows.Forms.RadioButton noneRadioButton;
         private System.Windows.Forms.RadioButton classificationRadioButton;
     }
 }

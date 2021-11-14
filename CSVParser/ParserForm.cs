@@ -238,7 +238,7 @@ namespace CSVParser
                     startRefactoringButton.Text = "Отменить";
                     csvTextBox.AllowDrop = false;
                     refactoringProgressBar.Value = 0;
-                    refactor.StartRefactoring(source_csv_File, RefactorType, saveFileDialog1.FileName, FinishRefactoring, (int)columnNumUpDown.Value);
+                    refactor.StartRefactoring(source_csv_File, RefactorType, saveFileDialog1.FileName, FinishRefactoring);
                 }
                 else
                 {
