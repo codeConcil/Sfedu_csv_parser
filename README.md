@@ -7,4 +7,4 @@ of the handler is located at "Sfedu_csv_parser / Output /". Requirements: IBM-co
 The development was carried out using the C # language. The project itself is hosted by "Sfedu_csv_parser / CSVParser /",
 where the main classes used are presented in "Sfedu_csv_parser / CSVParser / Refactoring /".
 
-[Download csv's] (https://drive.google.com/drive/folders/1hH7hjvN_IeeYHmlvomfSnBma2fvd7aaG?usp=sharing)
+[Download csv's](https://drive.google.com/drive/folders/1hH7hjvN_IeeYHmlvomfSnBma2fvd7aaG?usp=sharing)
